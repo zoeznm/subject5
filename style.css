@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Jersey+15&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --color1 : black;
+  --color2 : white;
+  --color3 : #d7abc5;
+  --color4 : #0ab4fc;
+  --color5 : #00cdc0;
+  --color6 : #80faa3;
+  --color7 : #d4eae0;
+}
+body {
+  margin: 0;
+  font-family: "Jersey 15", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  background-color: black;
+  color: var(--color4);
+}
+.popup {
+  z-index: 1;
+  display: none; /* 팝업은 기본적으로 숨겨져 있습니다 */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.popup-content {
+  position: absolute;
+  top: -9%;
+  left: 38%;
+  background-color: black;
+  margin: 15% auto;
+  padding: 40px;
+  border: 2px solid white;
+  width: 400px;
+  height: 400px;
+  max-width: 600px;
+  box-shadow: 10px 10px  var(--color4);
+  color: white;
+  font-family: "Jersey 15", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  text-align: left;
+}
+.popup-content > h2 {
+  position: absolute;
+  top: 20%;
+  left: 37%;
+  color: var(--color4);
+
+}
+.poptext1{
+position: absolute;
+top: 35%;
+
+}
+.poptext2 {
+  position:absolute;
+  top: 48%;
+
+}
+.poptext3 {
+  position:absolute;
+  top: 62%;
+
+}
+
+.poptext4 {
+  position:absolute;
+  top: 75%;
+}
+
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.title {
+  font-size: 2em;
+  margin: 0.5em 0;
+}
+
+.title2 {
+  font-size: 1.5em;
+  margin: 0.5em 0;
+}
+
+/* 기본 스타일: 데스크탑 */
+@media only screen and (min-width: 1024px) {
+  .title {
+    font-size: 2.5em;
+  }
+  
+  .title2 {
+    font-size: 2em;
+  }
+}
+
+/* 태블릿 스타일 */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .title {
+    font-size: 2.25em;
+  }
+  
+  .title2 {
+    font-size: 1.75em;
+  }
+}
+
+/* 모바일 스타일 */
+@media only screen and (max-width: 767px) {
+  .title {
+    font-size: 2em;
+  }
+  
+  .title2 {
+    font-size: 1.5em;
+  }
+}
+.bottom-border {
+  border-width: 0 0 1px;
+  border-bottom: var(--color4);
+  background-color: black;
+  color: var(--color4);
+  font-family: "Jersey 15", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+label {
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+.cursor1  {
+  position: absolute;
+  top: 440px;
+  left: 770px;
+  width: 10px;
+  height: 10px;
+  background-color: var(--color4);
+  margin-right: 5px;
+  animation: blink 1s step-end infinite;
+  display: inline-block;
+  vertical-align: middle;
+  position: fixed;
+}
+
+
+
+@keyframes blink {
+  50% {
+    background-color: transparent;
+  }
+}
+input[type="text"] {
+  border: none;
+  border-bottom: 2px solid black;
+  font-size: 1em;
+  padding: 5px;
+}
+.blank {
+  padding-bottom: 30px;
+}
+.color-fill1 {
+  position: absolute;
+  padding: 10px 10px;
+  top: 510px;
+  left: 790px;
+  background-color: var(--color6);
+  border: 2px solid black;
+}
+.color-fill2 {
+  position: absolute;
+  padding: 10px 10px;
+  top: 510px;
+  left: 830px;
+  background-color: var(--color3);
+  border: 2px solid black;
+}
+.color-fill3 {
+  position: absolute;
+  padding: 10px 10px;
+  top: 510px;
+  left: 870px;
+  background-color: var(--color5);
+  border: 2px solid black;
+}
+.selectBox2 * { box-sizing: border-box;
+  text-align: center; }
+
+.selectBox2 {
+  position: relative;
+  top: 15px;
+  width: 240px;
+  height: 35px;
+  border-radius: 4px;
+  border: 2px solid var(--color4);
+  background: url('https://freepikpsd.com/media/2019/10/down-arrow-icon-png-7-Transparent-Images.png') calc(100% - 7px) center no-repeat;
+  background-size: 20px;
+  cursor: pointer;
+  justify-content: center;
+  
+}
+
+.selectBox2:after {
+  content: '';
+  display: block; 
+  width: 2px;
+  height: 100%; 
+  position: absolute; 
+  top: 0; 
+  right: 35px;
+  background: var(--color4);
+}
+
+.selectBox2 .label {
+  font-family: "Jersey 15", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  width: inherit;
+  height: inherit;
+  border: 0 none;
+  outline: 0 none;
+  padding-left: 15px;
+  background: transparent;
+  cursor: pointer;
+  color: var(--color4);
+}
+
+.selectBox2 .optionList {
+  position: absolute; 
+  top: 28px;
+  left: 0;
+  width: 100%;
+  background: var(--color4);
+  color: black;
+  list-style-type: none;
+  padding: 0;
+  border-radius: 6px;
+  overflow: hidden;
+  max-height: 0;
+  transition: .3s ease-in;
+  text-align: center;
+  z-index: 1;
+}
+
+.selectBox2.active .optionList {
+  max-height: 500px;
+  text-align: center;
+}
+
+.selectBox2 .optionItem {
+  border-bottom: 1px dashed black;
+  padding: 5px 15px 5px;
+  transition: .1s;
+  text-align: center;
+}
+
+.selectBox2 .optionItem:hover {
+  background: var(--color4);
+
+}
+
+.selectBox2 .optionItem:last-child {
+  border-bottom: 0 none;
+}
+
+
+.selectBox2 .optionList::-webkit-scrollbar {width: 6px;}
+.selectBox2 .optionList::-webkit-scrollbar-track {background: transparent; }
+.selectBox2 .optionList::-webkit-scrollbar-thumb {background: var(--color4); border-radius: 45px;}
+.selectBox2 .optionList::-webkit-scrollbar-thumb:hover {background: #303030;}
+
+.submit {
+  width: 150px;
+  height: 50px;
+  position: absolute;
+  top: 640px;
+  border-style: none;
+  border: 2.5px solid var(--color4);
+  border-radius: 5px;
+  background-color: black;
+  color: var(--color4);
+  font-family: "Jersey 15", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 1.5em;
+  left: 765px;
+}
+
+button:hover {
+  background-color: var(--color4);
+  border: 2.5px solid black;
+  color: black;
+}
+
+.name1 {
+padding-bottom: 1
+}
